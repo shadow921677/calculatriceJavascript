@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<meta name="description" content="calculatrice basique implémenté avec le html, css(bootstrap), javascript">
+	<meta name="author" content="ZOONYABA PARENTE LOIC">
+	<!-- <link rel="shortcut icon" href="../../docsassets/ico/favicon.png"> -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="calco.css">
+	<title>calculatrice javascript</title>
+	<style type="text/css">
+		#btd{
+			padding-right: 45px;
+			padding-left: 20px;
+		}
+		#lcd{
+			padding-right: 22px;
+			padding-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row" style="margin-top: 100px;">
+			<div class="col-xs-12">
+				<div class="calcoDiv">
+					<div class="row">
+						<form class="col-xs-12">
+									<div class="row">
+										<div class="col-xs-12" id="lcd">
+											<input type="text" name="ecran" id="ecran" value="" class="form-ecran">
+										</div>
+									</div>
+									<br>
+									<div id="btd">
+										<!--premiere ligne-->
+										<div class="row" style="margin-top: -7px; margin-bottom: -7px;">
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="neuf">9</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="huit">8</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="sept">7</button>
+											</div>
+								
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton-s" type="submit" id="diviser">/</button>
+											</div>
+										</div>
+										<br>
+										<!--deuxieme ligne-->
+										<div class="row" style="margin-top: -7px; margin-bottom: -7px;">
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="six">6</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="cinq">5</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="quatre">4</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton-s" type="submit" id="multi">*</button>
+											</div>
+										</div>
+										<br>
+										<!--troisieme ligne-->
+										<div class="row" style="margin-top: -7px; margin-bottom: -7px;">
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="trois">3</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="deux">2</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="un">1</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton-s" type="submit" id="moins">-</button>
+											</div>
+										</div>
+										<br>
+										<!--quatrieme ligne-->
+										<div class="row" style="margin-top: -7px; margin-bottom: -7px;">
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton" type="submit" id="zero">0</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton-s" type="submit" id="point">.</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton-s" type="submit" id="egal">=</button>
+											</div>
+
+											<div class="col-xs-3">
+												<button class="btn btn-default bouton-s" type="submit" id="plus">+</button>
+											</div>
+										</div>
+										<br>
+									</div>	
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="calco.js"></script>
+</body>
+</html>
