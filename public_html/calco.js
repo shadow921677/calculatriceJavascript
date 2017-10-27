@@ -1,10 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 //initialisation des variables sur les différents boutons
 var neuf = document.getElementById('neuf');
 var huit = document.getElementById('huit');
@@ -132,6 +125,103 @@ diviser.addEventListener('click', function(e){
 egal.addEventListener('click', function(e){
 	e.preventDefault();
 	var valEcran = ecran.getAttribute('value');
-	var resultat = eval(valEcran);
-	ecran.setAttribute('value', resultat);
+	try{
+		var resultat = eval(valEcran);
+		ecran.setAttribute('value', resultat);
+	}
+	catch(e){
+		ecran.setAttribute('value', 'erreur');
+	}
 }, true);
+
+document.addEventListener('keydown', function(e){
+	if(e.keyCode=='8'){
+		ecran.setAttribute('value', '');
+	}
+	if(e.keyCode=='96'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '0';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='97'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '1';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='98'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '2';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='99'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '3';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='100'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '4';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='101'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '5';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='102'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '6';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='103'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '7';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='104'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '8';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='105'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '9';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='107'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '+';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='109'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '-';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='110'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '.';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='111'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '/';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='106'){
+	var valEcran = ecran.getAttribute('value');
+	valEcran = valEcran + '*';
+	ecran.setAttribute('value', valEcran);
+	}
+	if(e.keyCode=='13'){
+	var valEcran = ecran.getAttribute('value');
+	try{
+		var resultat = eval(valEcran);
+		ecran.setAttribute('value', resultat);
+	}
+	catch(e){
+		ecran.setAttribute('value', 'erreur');
+	}
+	}
+}, true);
+
