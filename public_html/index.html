@@ -5,8 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initialscale=1.0">
 	<meta name="description" content="calculatrice basique implémenté avec le html, css(bootstrap), javascript">
-	<meta name="author" content="ENSP-groupe11">
-	<!-- <link rel="shortcut icon" href="../../docsassets/ico/favicon.png"> -->
+	<meta name="author" content="4GI-groupe11">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="calco.css">
 	<title>calculatrice javascript</title>
@@ -25,6 +24,12 @@
 	<div class="container">
 		<div class="row" style="margin-top: 100px;">
 			<div class="col-xs-12">
+				<div class="alert alert-block alert-info" style="display:none">
+					<h4>NOTICE</h4>
+					<p>Ceci est une calculatrice ordinaire pouvant effectuer les opération de base tel que l'addition, la soustraction, la multiplication et la la division
+					.<br/> Pour ce qui est du calcul de puissance on notera que a**b=a^b, par ailleurs on aura toujours a//.../b=a/1.<br/> Toute autre combinaison de touche mal syntaxée
+					renverra une erreur. Enjoy</p>
+				</div>
 				<div class="calcoDiv">
 					<div class="row">
 						<form class="col-xs-12">
@@ -119,5 +124,11 @@
 		</div>
 	</div>
 	<script src="calco.js"></script>
+	<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(function(){
+			$("div.alert").show("slow").delay(10000).hide("slow");
+		});
+	</script>
 </body>
 </html>
